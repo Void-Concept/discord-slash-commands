@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { NextFunction } from 'express';
 import { InteractionType, InteractionResponseType, verifyKey } from 'discord-interactions';
 import SecretsManager from 'aws-sdk/clients/secretsmanager';
 import { SecretsManagerService } from "./discordInteractions/SecretManagerService";
@@ -40,6 +40,10 @@ app.get('/', async (req, res) => {
         return res.send(await spec.autoCompleteHandler(payload))
     }
     return res.status(400).send("Unknown Command")
+})
+
+app.use((err: Error, req: express.Request, res: express.Response, next: NextFunction): void => {
+    res.status(500).send(`Internal server error: ${err.message}`)
 })
 
 app.listen(port, () => {
