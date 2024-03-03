@@ -1,4 +1,4 @@
-import { InteractionResponseType, InteractionType } from 'discord-interactions'
+import { InteractionType } from 'discord-interactions'
 import { handler } from './time'
 import { RequestOption, Request, CommandOptionType } from './types'
 

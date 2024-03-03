@@ -1,7 +1,6 @@
 import { InteractionType } from 'discord-interactions'
 import { defaultRollDice, handler, Options } from './roll'
 import { RequestOption, Request, CommandOptionType } from './types'
-import { DiceRoll } from '@dice-roller/rpg-dice-roller'
 
 describe('roll', () => {
     const createRequest = (options: RequestOption[]): Request => ({
