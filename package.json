@@ -6,7 +6,8 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
-        "test": "jest"
+        "test": "jest",
+        "register-slash-commands": "discordSecretName=discord-secrets ts-node ./scripts/registerSlashCommands.ts"
     },
     "author": "",
     "license": "ISC",
@@ -17,6 +18,12 @@
         "typescript": "^5.3.3"
     },
     "dependencies": {
-        "discord-interactions": "^3.4.0"
+        "@dice-roller/rpg-dice-roller": "^5.5.0",
+        "@vvo/tzdb": "^6.125.0",
+        "aws-sdk": "^2.1569.0",
+        "date-fns": "^3.3.1",
+        "date-fns-tz": "^2.0.0",
+        "discord-interactions": "^3.4.0",
+        "node-fetch": "^3.3.2"
     }
 }

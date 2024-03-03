@@ -25,10 +25,11 @@
         "typeRoots": [
             "./node_modules/@types"
         ],
-        "outDir": "target"
+        "outDir": "target",
     },
     "exclude": [
         "node_modules",
-        "cdk.out"
+        "cdk.out",
+        "target"
     ]
 }
