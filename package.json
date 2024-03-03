@@ -1,0 +1,22 @@
+{
+    "name": "discord-slash-commands",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.ts",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "discord-interactions": "^3.4.0"
+    }
+}
